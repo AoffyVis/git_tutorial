@@ -1,0 +1,75 @@
+:root {
+	--main-color: #00c4e6;
+}
+
+.skillsContainer {
+    display: block;
+    background-color: #ffffff;
+    font-size: calc(10px + 2vmin);
+    padding: 3rem;
+}
+
+.skillsContainer h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+}
+
+.gridFrontSkills {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.gridBackEndSkill {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.Skill {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1rem;
+ }
+
+ .Skill img {
+     width: 40%;
+     height: auto;
+     margin: 0 auto;
+ }
+
+ .Skill p{
+    font-size: calc(10px + 1vmin);
+     font-weight: 600;
+ }
+
+ .Skill p:last-child{
+    font-size: calc(10px + .5vmin);
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.gridBackEndSkill .Skill p{
+    font-size: calc(10px + 1vmin);
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 680px) {
+    .gridFrontSkills .Skill p:last-child{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gridFrontSkills, .gridBackEndSkill {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -1,0 +1,44 @@
+.TransactionComponent {
+    background-color: #ffffff;
+}
+
+.FormTransaction {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FormTransaction label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.FormTransaction input {
+    width: 576px;
+    display: block;
+    background-color: #f0f0f0;
+    border: solid 5px #00bedf;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.FormTransaction input:focus {
+    outline: none;
+}
+
+.FormTransaction .sendBtn {
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+    background-color: rgba(124, 124, 124, 0.253);
+    color: #797979;
+    font-size: calc(10px + 1vmin);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.FormTransaction .sendBtn:enabled{
+    background-color: #00bedf;
+    color: #ffffff;
+}
